@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        function validation(){
+            var n = document.myform.txt.value;
+            var x = document.myform.encryption.value;
+
+            if(n==null || n==""){
+                alert("Name can't be blank ");
+                return false;
+            }
+
+            if(x.length<6){
+                alert("Password must be 6 characters long")
+                return false;
+            }
+        }
+    </script>
+
+    <form name="myform" onsubmit="return validation()">
+        <input type="text" name="txt"><br><br>
+        <input type="password" name="encryption"><br><br>
+        <input type="submit" value="register">
+    </form> -->
+
+
+
+
+    <!-- <script>
+        function loginform(){
+            var names = document.myform.name.value;
+            var pass1 = document.myform.password1.value;
+            var pass2 = document.myform.confirm.value;
+            // var mail = document.myform.e_mail.value
+            if(names == null || names == ""){
+                alert("Name can't have empty value")
+
+            }
+
+            else if((names.length)<10 ){
+                        alert("Name must have greater than 10 character value");
+            }
+
+            // else if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)){
+            //     alert("Email is Verified")
+            // }           
+
+    
+            else if(pass1.length<8){
+                alert("Password must have more than 8 characters");
+            }
+
+            else if(pass1!=pass2){
+                    alert("Password does not match!");
+                }
+
+            else if(pass1==pass2){
+                alert("You are successfully Registered");
+            }
+
+
+        }
+    </script>
+
+    <form name="myform"  method="post" onsubmit="loginform()">
+        Enter Your Name :<input type="text" name="name"><br><br>
+        Password : <input type="password" name="password1"><br><br>
+        Confirm Password : <input type="password" name="confirm"><br><br>
+        <input type="submit" value="login">
+    </form> -->
+
+
+<!-- 
+    <h1>JavaScript Number Validation</h1>
+    <script>
+        function valid_number(){
+            let n = document.myform.num.value;
+
+            if(isNaN(n)){
+                document.getElementsById('num1').innerHTML="Only NUmeric Values are allowed";
+                return false;
+            }
+
+            else{
+                return true;
+
+            }
+        }
+    </script>
+    <form name="myform" onsubmit="return valid_number">
+    
+    <input type="text" name="num"><span id="num1"></span>
+    <input type="submit" value="register">
+//not working as expected.........
+    </form> -->
+
+
+
+<!-- 
+    <script>
+
+        <h1>Email Checking</h1>
+        function validate_email(){
+
+            var check = document.myform.e_mail.value;
+
+            var atposition = check.indexOf("@");
+            var dotposition = check.lastindexOf(".");
+
+
+            if(atposition < 1 || dotposition <atposition + 2 || dotposition+2>=check.length){
+                alert("PLease Enter Valid Email");
+                return false;
+            }
+
+            else{
+                document.write("You Are A Valid User");
+            }
+        }
+
+        </script>
+
+        <form name="myform" method="post" onsubmit="return validate_email();">
+        
+            <h4> Email : </h4>
+
+            <input type="text" name="e_mail">
+            <input type="submit" value="register">
+        //this one also not working.......
+        </form> -->
+    </body>
+</html>

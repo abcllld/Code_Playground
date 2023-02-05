@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="text.js"></script>
+    <link rel="stylesheet" href="text.css">
+</head>
+<body>
+
+    <div class="text">
+        <center>
+            <div id="container">
+                <fieldset>
+
+                    <button class="save">
+                        <i class="fa-solid fa-floppy-disk"></i>
+                    </button>
+
+
+                    &nbsp;
+
+
+                    <button class="italicFont" onclick="italic()" title="Italic Text">
+                        <i class="fa-solid fa-italic"></i>
+                    </button>
+
+                    <i class="fa-solid fa-bold"></i>
+                    <button class="boldFont" onclick="bold()" title="Bold Text">
+                        <i class="fa-solid fa-bold"></i>
+                    </button>
+
+                    <button class="underlineFont" onclick="underline()" title="UnderLine Text">
+                        <i class="fa-sharp fa-solid fa-underline"></i>
+                    </button>
+
+                    <button class="fontStrikethrough" onclick="strikethrough()">
+                        <i class="fa-solid fa-strikethrough"></i>
+                    </button>
+
+                    <select id="fontStyle" class="font_Style" onchange="changeFont(this)">
+                        <option value="calibiri">Calibiri</option>
+                        <option value="timesNewRoman">Times New Roman</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="comicSansMs">Comic Sans MS</option>
+                    </select>
+
+                    <select class="fontSize" onchange="changeFontSize(this)">
+
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+
+                    </select>
+
+
+                    <button class="fontRight_Aligned" onclick="rightAlign()"><i
+                            class="fa-sharp fa-solid fa-align-right"></i></button>
+
+                    <button class="fontLeft_Aligned" onclick="leftAlign()"><i
+                            class="fa-sharp fa-solid fa-align-left"></i></button>
+
+                    <button class="fontCenter_Aligned" onclick="centerAlign()"> <i class="fa-solid fa-align-center"></i>
+                    </button>
+
+                    <button class="fontJustify_Aligned" onclick="justifyAlign()"><i
+                            class="fa-solid fa-align-justify"></i></button>
+
+
+                    <button class="color" onchange="selectColor()" id="myColor"> <i
+                            class="fa-sharp fa-solid fa-droplet"></i> </button>
+
+                    <button class="redo" onclick="redo()">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </button>
+
+                    <button class="undo" onclick="undo()">
+                        <i class="fa-solid fa-rotate-left"></i>
+                    </button>
+
+                    <button class="minimize" onclick="minimize()">
+                        <i class="fa-sharp fa-solid fa-window-minimize"></i>
+                    </button>
+                </fieldset>
+
+            <textarea class="textarea" id="text" rows="29" cols="108"></textarea>
+
+            </div>
+        </center>
+    </div>
+   </body>
+   </html>
+   

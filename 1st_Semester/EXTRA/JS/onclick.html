@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="btn">Click_Here</button>
+
+
+    <script>
+
+        document.getElementById('btn').onclick=function(){
+            event()
+        };
+
+        function event(){
+            document.getElementById("btn").innerHTML="Welcome to Events";
+            document.getElementById("btn").style.color="red";
+            document.getElementById("btn").style.background="black";
+            document.getElementById("btn").style.border="10px solid green";
+            document.getElementById("btn").style.borderRadius="30px"
+            document.getElementById("btn").style.width="1300px"
+            document.getElementById("btn").style.height="500px"
+
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+    <p id="para">Click Here</p>
+
+    <script>
+        document.getElementById('para').onclick=function(){
+            fun()
+        };
+
+        function fun(){
+        document.getElementById('para').innerHTML="Welcome to full screen View";
+        document.getElementById('para').style.fontSize="20px";
+        document.getElementById('para').style.border="10px solid blue";
+        document.getElementById('para').style.background="aqua";
+        document.getElementById('para').style.color="red";
+
+        document.getElementsByTagName('body')[0].style.fontSize="20px";
+        document.getElementsByTagName('body')[0].style.background="green";
+        document.getElementsByTagName('body')[0].style.color="red";
+        }
+    </script>
+</body>
+</html>

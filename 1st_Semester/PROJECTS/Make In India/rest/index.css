@@ -1,0 +1,16 @@
+:root{
+    background-color: aquamarine;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.logo{
+
+    display: flexbox;
+    text-align: center;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+                         <!-- <h1>Syntax : </h1> 
+                 element.addEventListener(event,function,useCapture); -->
+
+
+
+<!-- <button id="btn">Click Here</button>
+<p id="para"></p>
+
+<script>
+document.getElementById('btn').addEventListener("click", addingEvent);
+
+function addingEvent(){
+    document.getElementById('para').innerHTML = "Hello" + "<br>" +"This is Introduction to Adding Listeners Property"
+}
+</script> -->
+
+
+
+
+
+
+<!-- <input type="button" value="ClickHere" id="btn"><br><br>
+<input type="radio" name="gender" onclick="fun1()">Male
+<input type="radio" name="gender" onclick="fun2()">Female
+
+<p id="para1"></p>
+<p id="para2"></p>
+<script>
+
+function fun1(){
+    alert("Male Always Rocks! We are Alpha");
+}
+
+function fun2(){
+    alert("Female are pretty Awesome!I respect them");
+}
+
+function fun3(){
+    document.getElementById('para1').innerHTML = "This is third Para";
+}
+
+function fun4(){
+    document.getElementById('para2').innerHTML = "This is fourth function";
+}
+
+var my_Button = document.getElementById('btn');
+
+my_Button.addEventListener("click",fun1);
+my_Button.addEventListener("click",fun2);
+my_Button.addEventListener("click",fun3);
+my_Button.addEventListener("click",fun4);
+
+
+</script> -->
+
+
+<button id="btn">Click Here</button>
+<p id="para"></p> 
+
+<script>
+
+    function fun(){
+    btn.style.background="orange";
+    btn.style.color="green";
+    btn.style.height="500px";
+    btn.style.width="1400px";
+    }
+
+    function fun1(){
+        document.getElementById("para").innerHTML = "This is the second element ";
+    }
+
+    function fun2(){
+        btn.style.background ="";
+        btn.style.color="";
+        btn.style.height="";
+        btn.style.width="";
+    }
+
+    
+    var my_button = document.getElementById('btn');
+    my_button.addEventListener("click",fun1);
+    my_button.addEventListener("mouseover",fun);
+    my_button.addEventListener("mouseout",fun2); //associated with the " " and bring backs to the original form.......
+
+
+</script>
+</body>
+
+</html>

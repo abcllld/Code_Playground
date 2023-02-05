@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exception Handling</h1>
+    <script>
+        // add();//this function is not defined only but then also we are calling this function..this is a error ..or exception in JS so this wil be put under try{} 
+        try{
+            add();
+            document.write("all the codes wil be skipped<br>");//-->skipped
+            //as this is exception so all the codes after add() will be skipped
+
+            //it will directly go to catch() block
+        }
+        catch(e){
+            //e is a block which provide info about the exception
+            // document.write("Message : " + e.message + "<br")
+            // document.write("Name : " + e.name + "<br")
+            // document.write("Stack : " + e.stack + "<br")
+
+            document.write("Function Defined Nahi Hai<br>");//-->>printed
+            //go to the console and you will not see any error as we have handled the error...though add() is not defined..he..he..he..he..
+        }   
+
+        finally{
+            //under this those code are written which must execute whether there is exception or not 
+            document.write("Execute this whether there is exception or not <br>")
+        }
+
+        //just comment out //add() and then see "all codes will be skipped" also be executed...bu then "Function Defined Nahi Hai" will not be executed...The catch{} block code gets executed only when there is exception in try{}block
+
+        //ALSO READ ABOUT "THROW"// as not clear
+
+
+        //NOTE: -->> thus under try those codes are written which are cause of exception
+        //and under catch() is written to handle those exception
+
+    </script>
+</body>
+</html>

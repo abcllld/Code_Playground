@@ -1,0 +1,36 @@
+<!-- Decimal TO Binary Conversion -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var n,r,b=0,base;
+
+        // n = parseInt(prompt("Enter any no. :  "));
+
+        // while(n!=0){
+        //     r = n%2;
+        //     b = b + (r*base);
+        //     n  = n/2;
+        //     base = base * 10;
+        // }
+        // document.write("The Binary no is = " + b);
+
+        let number = prompt("Enter no : ");
+            let bin = 0;
+            let rem = 1, step = 1,i=1;
+            while(number!=0){
+                 bin = bin + rem*i;
+                  i= i * 10;
+            }
+            document.write("Binary : " + number);
+</script>
+</body>
+</html>

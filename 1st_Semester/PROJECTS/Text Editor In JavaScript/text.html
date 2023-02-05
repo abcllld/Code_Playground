@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="text.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="text.js" href="text/javascript"></script>
+</head>
+<body>
+
+    <div class="text">
+
+        <center>
+            <div id="container">
+                <fieldset>
+
+                    <button class="save">
+                        <i class="fa-solid fa-floppy-disk"></i>
+                    </button>
+
+
+                    
+                    &nbsp;
+
+
+                        <button class="italicFont" onclick="document.execCommand('italic', false,null);" title="Italic Text">
+    <i class="fa-solid fa-italic"></i> 
+                        </button>
+    
+    <i class="fa-solid fa-bold"></i>
+                        <button class="boldFont" onclick="document.execCommand('bold', italic,false);" title="Bold Text">
+    <i class="fa-solid fa-bold"></i>
+                        </button>
+    
+                        <button class="underlineFont" onclick="document.execCommand('underline',false,null);" title="UnderLine Text">
+    <i class="fa-sharp fa-solid fa-underline"></i>
+                        </button> 
+    
+    <button class="fontStrikethrough" onclick="document.execCommand('strikethrough',false,null);">
+        <i class="fa-solid fa-strikethrough"></i>
+    </button>
+    
+                        <select id="fontStyle" class="font_Style" onchange="changeFont('this');">
+                            <option value="calibiri">Calibiri</option>
+                            <option value="timesNewRoman">Times New Roman</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="comicSansMs">Comic Sans MS</option>
+                        </select>
+    
+                      <select class="fontSize" onchange="changeFontSize('this');">
+
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+    
+                    </select>
+    
+    
+    <button class="fontRight_Aligned" onclick="document.execCommand('right_aligned',false,null);"><i class="fa-sharp fa-solid fa-align-right"></i></button>
+    
+    <button class="fontLeft_Aligned" onclick="document.execCommand('left_aligned',false,null);"><i class="fa-sharp fa-solid fa-align-left"></i></button>
+
+    <button class="fontCenter_Aligned" onclick="document.execCommand('center_aligned',false,null);"> <i class="fa-solid fa-align-center"></i> </button>
+    
+    <button class="fontJustify_Aligned" onclick="document.execCommand('justify_aligned',false,null);"><i class="fa-solid fa-align-justify"></i></button>
+
+   
+    
+    <button class="color" onchange="selectColor" id="myColor"> <i class="fa-sharp fa-solid fa-droplet"></i> </button>
+    
+
+    <button class="redo">
+        <i class="fa-solid fa-rotate-right"></i>
+        </button>
+    
+        <button class="undo">
+        <i class="fa-solid fa-rotate-left"></i>
+        </button>
+
+
+    
+ 
+
+    <button class="minimize">
+        <i class="fa-sharp fa-solid fa-minimize"></i>
+    </button>
+
+    <button class="maximize">
+        <i class="fa-solid fa-maximize"></i>
+    </button>
+
+    <button class="close">
+        <i class="fa-solid fa-rectangle-xmark"></i>
+    </button>
+                </fieldset>
+                <br>
+                <div class="area">
+                    <textarea name="edit" rows="27" cols="105" placeholder="Began Your Editing Journey"></textarea>
+                </div>
+
+            </div>
+        </center>
+     
+
+    </div>
+
+   
+
+    <!-- <i class="fa-solid fa-rectangle-xmark"></i>
+    <i class="fa-solid fa-maximize"></i>
+    <i class="fa-sharp fa-solid fa-minimize"></i>
+    <i class="fa-solid fa-floppy-disk"></i>
+    <i class="fa-sharp fa-solid fa-house-user"></i>
+    <i class="fa-sharp fa-solid fa-download"></i>
+    <i class="fa-solid fa-rotate-right"></i>
+    <i class="fa-solid fa-rotate-left"></i>
+    <i class="fa-sharp fa-solid fa-underline"></i>
+    <i class="fa-solid fa-bold"></i>
+    <i class="fa-solid fa-italic"></i>
+    <i class="fa-sharp fa-solid fa-text-size"></i>
+    <i class="fa-solid fa-font-case"></i>
+
+-->
+    
+</body>
+</html>

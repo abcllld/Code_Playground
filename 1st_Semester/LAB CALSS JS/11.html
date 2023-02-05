@@ -1,0 +1,33 @@
+<!-- 11. C Program to find the reverse of the digits of a given number. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         //not working but running in C
+
+        //  In JavaScript, when you divide two numbers, the result is a floating-point number.
+        // For example, if you divide 10 by 2, the result is 5.0 instead of 5.
+        // parseInt function is used to convert a String or a floating-point number to an Integer. In this case, we're converting the floating-point number obtained from the division of two integers to an integer.
+
+        var n,rev=0,rem;
+        n = parseInt(prompt("Enter a no : "));
+
+        var temp = n;
+
+        while(n!=0){
+            rem = n % 10;
+            rev = rev * 10 + rem;
+            n = parseInt(n/10);
+        }
+
+        document.write("The reverse of " + temp + " = " + rev);
+    </script>
+</body>
+</html>

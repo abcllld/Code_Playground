@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Matrix Addition</h1>
+
+<p>Enter size of matrix : <input type="text" id="matrixSize"></p>
+<br>
+
+<p>Input element of first matrix :</p>
+<div id="matrix1Inputs"></div>
+<br>
+
+<p>Input the element of the second matrix :</p>
+<div id="matrix2Inputs"></div>
+<br>
+
+<button onclick="addMatrices()">Add Matrices</button>
+<br><br>
+
+<p>Result :</p>
+<div id="result"></div>
+
+<script>
+    let arr1, arr2, sum;
+    let n;
+
+    function addMatrices() {
+        n = document.getElementById("matrixSize").value;
+
+        // Create matrix1 with input values
+        arr1 = new Array(n);
+        for(let i = 0; i < n; i++) {
+            arr1[i] = new Array(n);
+        }
+
+        for(let i = 0; i < n; i++) {
+            for(let j = 0; j < n; j++) {
+                arr1[i][j] = document.getElementById(`matrix1Input${i}${j}`).value;
+            }
+        }
+
+        // Create matrix2 with input values
+        arr2 = new Array(n);
+        for(let i = 0; i < n; i++) {
+            arr2[i] = new Array(n);
+        }
+
+        for(let i = 0; i < n; i++) {
+            for(let j = 0; j < n; j++) {
+                arr2[i][j] = document.getElementById(`matrix2Input${i}${j}`).value;
+            }
+        }
+
+        // Add matrices
+        sum = new Array(n);
+        for(let i = 0; i < n; i++) {
+            sum[i] = new Array(n);
+        }
+
+        for(let i = 0; i < n; i++) {
+            for(let j = 0; j < n; j++) {
+                sum[i][j] = Number(arr1[i][j]) + Number(arr2[i][j]);
+            }
+        }
+
+        // Print result
+        let resultHTML = "";
+        for(let i = 0; i < n; i++) {
+            for(let j = 0; j < n; j++) {
+                resultHTML += sum[i][j] + " ";
+            }
+            resultHTML += "<br>";
+        }
+        document.getElementById("result").innerHTML = resultHTML;
+    }
+
+    window.onload = function() {
+        let matrix1HTML = "";
+        let matrix2HTML = "";
+        for(let i = 0; i < 100; i++) {
+            for(let j = 0; j < 100; j++) {
+                matrix1HTML += `Element [${i+1}][${j+1}] = <input type="text" id="matrix1Input${i}${j}">`;
+                matrix2HTML += `Element [${i+1}][${j+1}] = <input type="text" id="matrix2Input${i}${j}">`;
+            }
+            matrix1HTML += "<br>";
+            matrix2HTML += "<br>";
+        }
+        document.getElementById("matrix1Inputs").innerHTML = matrix1HTML;
+        document.getElementById("matrix2Inputs").innerHTML = matrix2HTML;
+    }
+</script>
+
+</body>
+</html>
+

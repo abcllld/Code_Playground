@@ -1,0 +1,27 @@
+<!-- 9.  C program to find the factorial of a given number -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n,fact=1;
+        n = parseInt(prompt("Enter any Number: "));
+        if(n<0){
+            console.log("Please Enter a positive no");
+        }
+        else{
+        for(var i=1;i<=n;i++){
+            fact = fact * i;
+        
+    }
+        console.log("The Factorial of "+n+ " is"+fact);
+}
+    </script>
+</body>
+</html>

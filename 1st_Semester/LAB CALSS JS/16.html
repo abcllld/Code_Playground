@@ -1,0 +1,33 @@
+<!-- 16. C program to find the factorial of a given number using function -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function factorial(n){
+            let fact = 1;
+            if(n==0 || n==1){
+                return fact;
+            }
+            else if(n>1){
+                for(var i=1;i<=n;i++){
+                    fact = fact * i;
+                }
+                return fact;
+            }
+            else{
+                alert("Enter a positive no. please");
+            }         
+        }
+
+        n = parseInt(prompt("Enter any Integer"));
+        document.write("The Factorial of " + n +" = " + factorial(n))
+    </script>
+</body>
+</html>

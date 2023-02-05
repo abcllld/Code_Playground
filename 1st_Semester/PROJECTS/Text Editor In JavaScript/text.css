@@ -1,0 +1,151 @@
+body{
+    /* background-color:lightseagreen; */
+    background-image: url('back1.jpeg');
+}
+
+.text{
+    padding-top: 50px;
+
+}
+
+#container{
+    width: 800px;
+    height: 500px;
+    border: 4px solid red;
+    display: block;
+    background-image: url('text.jpg');
+    
+}
+
+fieldset{
+    background-color: black;
+    /* padding-right: 280px; */
+}
+
+.save{
+    width:40px;
+    margin-right: 16px;
+    border:2px solid red;
+    }
+
+.boldFont{
+    width: 30px;
+    border:2px solid red;
+    /* height: 20px;
+    border-style: dotted;
+    border-color: red;
+    border-radius: 5%;
+    font-weight: bolder; */
+    margin-left: -17px;
+
+}
+.italicFont{
+    width: 30px;
+    border:2px solid red;
+    /* height: 20px; */
+    /* border-style: dotted; */
+    /* border-color: green; */
+    /* border-radius: 5%; */
+    /* text-decoration:wavy; */
+}
+
+
+.underlineFont{
+    width: 30px;
+    border:2px solid red;
+    /* height: 20px; */
+    /* border-style: dotted; */
+    /* border-color: rgb(8, 3, 96); */
+    /* border-radius: 5%; */
+    /* text-decoration: underline; */
+}
+
+.fontStrikethrough{
+    width: 30px;
+    border:2px solid red;
+    /* height: 20px; */
+    /* border-style: dotted;
+    border-color: green;
+    border-radius: 5%; */
+}
+
+.font_Style{
+    width:80px;
+    height: 24px;
+    border:2px solid red;
+}
+
+.fontSize{
+    border:2px solid blue;
+    border-style: double;
+    height:24px;
+}
+
+
+
+.fontRight_Aligned{
+    width: 40px;
+    border:2px solid red;
+    /* height: 20px;
+    border-style: dotted;
+    border-color: green;
+    border-radius: 5%; */
+    /* padding-top:7px; */
+}
+
+.fontCenter_Aligned{
+    width: 40px;
+    border:2px solid red;
+    /* height: 20px;
+    border-style: dotted;
+    border-color: green;
+    border-radius: 5%; */
+    /* padding-top:7px; */
+}
+
+.fontJustify_Aligned{
+    width: 40px;
+    border:2px solid red;
+    /* height: 20px;
+    border-style: dotted;
+    border-color: green;
+    border-radius: 5%; */
+    /* padding-top:7px; */
+}
+
+.fontLeft_Aligned{
+width:40px;
+border:2px solid red;
+}
+
+
+
+.close{
+    width:40px;
+border:2px solid red;
+}
+
+.maximize{
+    width:40px;
+border:2px solid red;
+}
+
+.minimize{
+    width:40px;
+border:2px solid red;
+}
+.redo{
+width:40px;
+border:2px solid red;
+}
+
+.undo{
+width:40px;
+border:2px solid red;
+}
+
+
+.area textarea{
+    background-image: url(comment.jpeg);
+}
+

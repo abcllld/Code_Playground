@@ -1,0 +1,25 @@
+/* The css syntax is = selector{property:value} */
+
+/* The "*" is called the universal selector which selects all the elements */
+
+/* If value of everything is 0,0,0 then it is black color */
+
+/* The opacity can also be given in background color in percentage also*/
+
+/* margin & padding shorthand : margin : top right bottom left */
+/* we can set the margin property to ""auto" to center the elements horizontally within its container */
+
+
+/* The total element width : width + left margin + right margin + left padding + right padding + left border + right border ...similarly the height*/
+
+/* Outline : an outline is a LINE that is drawn around elements, outside the borders  */
+
+/* The icons are available from google, bootstrap..stc */
+
+
+/* display : inline --> display a list of link as a single horizontal line */
+
+
+
+
+

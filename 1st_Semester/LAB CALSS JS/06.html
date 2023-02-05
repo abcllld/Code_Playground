@@ -1,0 +1,30 @@
+<!-- 6.  C Program to check the given number is prime or not. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n,count = 0;
+        n = parseInt(prompt("Enter any Number : "));
+
+        for(var i=1;i<=n;i++){
+            if(n%i==0){
+                count++;
+            }
+        }
+        if(count==2){
+            document.write(n +" is Prime Number")
+        }
+        else{
+            document.write(n +" is Not Prime Number")
+
+        }
+    </script>
+</body>
+</html>

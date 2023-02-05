@@ -1,0 +1,31 @@
+<!-- 10. C program on display the Fibonacci Series.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n,first = 0,second = 1,i,next;
+        n  = parseInt(prompt("Enter the No. of terms "));
+        document.write("The First "+n+" terms of the Fibonacci Series are : <br>");
+        for(i=0;i<n;i++){
+        if(i<=1){
+            next = i;
+        }
+        else{
+            next = first + second;
+            first = second;
+            second = next;
+        }
+
+        document.write(next+"<br>"); 
+
+    }
+    </script>
+</body>
+</html>

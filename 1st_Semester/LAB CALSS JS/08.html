@@ -1,0 +1,43 @@
+<!-- 8.  C Program for a simple calculator using switch statement. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        alert("Press 1 for addition\nPress 2 for subtraction\nPress 3 for Multiplication\nPress 4 for Division");
+        var choice;
+        var operand1, operand2;
+        choice = prompt("Enter Your Choice from Following : ");
+        operand1 = Number(prompt("Enter first operand : "));
+        operand2 = Number(prompt("Enter second operand : "));
+
+
+        switch (choice) {
+            case '1': document.write("The Addition of " + operand1 + " and " + operand2 + " is = " + (operand1 + operand2));
+                break;
+
+            case '2': document.write("The Subtraction of " + operand1 + " and " + operand2 + " is = " + (operand1 - operand2));
+                break;
+
+            case '3': document.write("The Multiplication of " + operand1 + " and " + operand2 + " is = " + (operand1 * operand2));
+                break;
+
+            case '4': document.write("The Division of " + operand1 + " and " + operand2 + " is = " + (operand1 / operand2));
+                break;
+
+            default: alert("Enter the Number as Instructed");
+        }
+
+    </script>
+
+</body>
+
+</html>

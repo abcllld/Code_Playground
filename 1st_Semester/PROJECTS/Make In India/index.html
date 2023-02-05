@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="resp.css">
+</head>
+<style>
+  *{
+    margin:0;
+    padding:0; 
+  }
+
+  .box1{
+    /* background-image: url('g.jpeg'); */
+  /* background-color: rgb(220, 73, 203); */
+  background-image: url('bci.jpg');
+  height: 90px;
+  width: 1730px;
+
+  align-content: center;
+  
+  /* background-color: aqua; */
+
+  }
+
+ img{
+
+  height: 85px;
+width: 150px;
+/* transition: width 3s, transform 5s;
+transition-timing-function: linear;
+animation-fill-mode: forwards; */
+
+ }
+/* 
+ .logo img:hover{
+  width:300px; */
+  /* transform: ; */
+  /* transform: skewX(30deg); */
+
+ /* } */
+
+ nav{
+  display:flex;
+ }
+ 
+ nav ul{
+  /* justify-content: center; */
+
+  height: 96px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+ }
+
+ nav li{
+  list-style: none; 
+    padding: 0 15px;
+  text-shadow: 3px 2px 2px;
+  /* text-decoration-color: rgb(243, 5, 5); */
+  text-decoration: dotted;
+
+ }
+
+ .search{
+  display: flex;
+  align-items: center;
+
+ }
+
+ .search input{
+  height: 35px;
+  width: 370px;
+  background-color: rgb(212, 233, 233);
+  margin: 0 16px 0 56px;
+  padding:0 12px;
+  border: 10px;
+  /* border-color: rgb(209, 3, 3); */
+  box-shadow: 3px 3px 3px;
+  /* border-radius: 10px; */
+ }
+
+ /* .btn{
+  display: flex;
+  align-items: center;
+ } */
+
+ .search button{
+  height: 35px;
+  width: 80px;
+  background-color: rgb(212, 225, 214);
+  border: 10px;
+  border-color: rgb(11, 12, 11);
+  box-shadow: 3px 3px 3px;
+
+  /* border-radius: 10px; */
+
+ }
+
+ #flag img{
+  width: 368px;
+  height: 290px;
+  float: right;
+  position: absolute;
+  top: -112px;
+  /* bottom: 112px; */
+  right: 8px;
+  transform: 1s;
+  transition: width 5s, height 5s, transform 2s;
+
+}
+ 
+#flag img:hover{
+  transform: rotate(360deg);
+}
+
+#robot img{
+  /* float: right; */
+position: absolute;
+right: 493px;
+top: 5px;
+display: inline-block;
+/* animation-name: fadeInOut;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-timing-function: linear; */
+
+
+}
+
+/* @keyframes fadeInOut{
+  from{
+    opacity: 0;
+
+  }
+  to{
+    opacity: 1;
+  }
+} */
+
+ .box2{
+  /* background-color: aqua; */
+  background-image: url('Party.jpg');
+
+  width: 1730px;
+ }
+ .headings #h1{
+  text-align: var(10px);
+  text-decoration: underline;
+  text-shadow: 2px 2px red;
+  font-size: 25px;  
+
+ }
+
+ .headings #small{
+  font-size: 25px;
+  font-style: italic;
+ }
+
+ .carrer{
+  display: flex;
+ }
+
+ .carrer ul{
+  display: flex;
+  height:80px;
+  align-items: center;
+  justify-content: flex-start;
+ 
+ }
+ .carrer li{
+ padding: 0 50px;
+  list-style: none;
+ }
+
+ .carrer img{
+    height: 260px;
+    /* width:fit-content; */
+    
+}
+
+ .box3{
+  background-color: rgb(246, 156, 38);
+  /* background-image: url('colour.jpg'); */
+  width: 1730px;
+ }
+
+/* .box3 form, input, option, textarea{
+background-color: rgb(246, 163, 8);
+} */
+ .box4{
+  background-color: rgb(172, 233, 96);
+  width: 1730px;
+  display: flex;
+  justify-content: center;
+ }
+
+ .box5{
+
+  background-color: rgb(244, 244, 7);
+  text-align: center;
+  height: 30px;
+  width: 1730px;
+ }
+ 
+
+ .proceed{
+  align-items: center;
+  padding: 0px 15px;
+  margin: 0;
+ }
+
+
+
+</style>
+  <body>
+    <!-- box 1 -->
+    <div class="box1">
+
+    <header>
+      <nav>
+
+        <div class="logo">
+          <img src="dark logo.png" alt="" />
+          <!-- <img src="" alt=""> -->
+        </div>
+
+        <div class="info">
+        <ul>
+          <li><a href="abc.com">Home</a></li>
+          <li><a href="abc.com">Contact</a></li>
+          <li><a href="abc.com">About</a></li>
+        
+        </ul>
+        </div>
+
+        <div class="search">
+        <input type="text" placeholder="Serach & Invent" />
+        <button class="btn">Search</button>
+        </div>
+
+        <div id="robot">
+          <img src="robot.png" alt="">
+        </div>
+
+        <div id="flag">
+          <img src="flag1.png" alt="">
+        </div>
+      </nav>
+    </header>
+
+    </div>
+    <!-- BOX IMAGE FLAG -->
+
+<!--    BOX 2 -->
+<div class="box2">
+<div class="headings">
+<center>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div id="h1">
+  <h1><b>Necessity Is The Mother Of Invention</b></h1>
+  </div><br><br>
+
+  <div id="small">
+  <small><i><code>Welcome To The Pride Portal Of India</code></i></small> 
+  </div>
+  </center>
+  <br><br>
+
+</div>
+<br><br><br><br><br><br><br><br>
+<div class="carrer">
+
+  <ul>
+    <li><a href="jobs.com">CARRIER<img src="carrier.jpg" alt=""></a></li>
+    <li><a href="jobs.com">TECHNOLOGIES<img src="technology.webp" alt=""></a></li>
+    <li><a href="jobs.com">DEMAND<img src="demand.jpg" alt=""></a></li>
+    <li><a href="jobs.com">COUNSELLING<img src="counselling.webp" alt=""></a></li>
+    <li><a href="jobs.com">INVENTIONS<img src="Invention.jpg" alt=""></a></li>
+    <li><a href="jobs.com">IDEAS<img src="idea.jpg" alt=""></a></li>
+    <li><a href="jobs.com">SCHEMES<img src="schemes.png" alt=""></a></li>
+    
+</ul>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</div>
+   
+<!-- BOX 3 -->
+<div class="box3">
+
+<br><br>
+
+<center>
+<h2><code><b>Fill up the following form to reach us with your Ideas</b></code></h2>
+</center>
+
+<br><br>
+<form>
+    Name: <input type="text" placeholder="Enter Your Full Name"><br<br>
+
+    Father's Name : <input type="text" placeholder="Enter Your Father's Name"><br<br>
+
+    Mother's Name :<input type="text" placeholder="Enter Your Mother's Name"><br<br>
+
+    Present Address :<input type="text" placeholder="Enter Your Present Address"><br><br>
+
+    Gender : <input type="radio" name="">Male
+             <input type="radio" name="">Female<br><br>
+
+    Date Of Birth : <input type="date" placeholder="Enter Your DOB"><br<br<br<br<br>
+
+    Educational Qualification : <select><option value="10" nam="study">Matriculation</option>
+    <option value="12" nam="study">Higher Secondary(10+12)</option>
+    <option value="Grad" nam="study">Under-Graduation</option>
+    <option value="Pg" nam="study">Post-Graduate</option>
+    <option value="Phd" nam="study">Doctor Of Philosophy</option>
+    <option value="empty" nam="study">None</option>
+  </select><br<br<br<br<br>
+
+
+
+    Fathers Qualification :<select><option value="10" nam="study">Matriculation</option>
+    <option value="12" nam="study">Higher Secondary(10+12)</option>
+    <option value="Grad" nam="study">Under-Graduation</option>
+    <option value="Pg" nam="study">Post-Graduate</option>
+    <option value="Phd" nam="study">Doctor Of Philosophy</option>
+    <option value="empty" nam="study">None</option>
+  </select><br><br>
+
+
+    Mothers Qualification : <select><option value="10" nam="study">Matriculation</option>
+    <option value="12" nam="study">Higher Secondary(10+12)</option>
+    <option value="Grad" nam="study">Under-Graduation</option>
+    <option value="Pg" nam="study">Post-Graduate</option>
+    <option value="Phd" nam="study">Doctor Of Philosophy</option>
+    <option value="empty" nam="study">None</option>
+  </select><br><br>
+
+
+    Are You A Present Or Ex-Serviceman : <input type="radio">Yes
+                                        <input type="radio">No<br><br>
+
+    Upload Any Of The Documents :<select><option value="voter" nam="study">Voter Id Card(10+12)</option>
+    <option value="Adhar" nam="study">Aadhar Card</option>
+    <option value="pan" nam="study">PAN Card</option>
+    <option value="License" nam="study">Driving License</option></select><br><br>
+
+
+    Upload Your Passport Photo : <input type="file" name="fileupload1" accept="image/*"><br><br>
+
+
+    Upload your Signature : <input type="file" name="fileupload3" accept="image/*"><br><br> 
+
+
+    Upload Your Educational Document : <input type="file" name="fileupload2" accept="image/*"><br><br>
+
+    Upload Your Bank PassBook Details : <input type="file" name="fileupload2" accept="image/*"><br><br> 
+
+    Enter A Strong Password : <input type="password" placeholder="Enter The Password"><br><br>
+
+    <textarea name="Leave a Message" rows="10" cols="188">Leave a Comment</textarea> <br><br>
+
+
+    <div class="proceed">
+    <input type="Submit" value="Submit">
+    <input type="reset" value="Reset" ><br><br>
+</div>
+
+    <input type="checkbox">I agree to the terms and policy administered by the Government of India and Shall be solely responsible if any of the above information is found Inccorect or illegal. I shall abide by the law of India and will be equally responsible. 
+    <br><br>
+
+    <b>Are You Sure You Want To Proceed</b><br>
+
+    <input type="checkbox">Yes<br>
+    <input type="checkbox">No
+
+    <br><br>
+
+    <button class="p1">Proceed</button>
+    <button class="b1">Back</button>
+    <br><br><br><br>
+
+
+</form>
+
+</div>
+
+
+<!-- Box 4 -->
+
+<div class="box4">
+<h2><b><i><u>Picture At A Glance</u></i></b></h2><br><br>
+Take a look at the greatest achievement of yours in th past few years of Glory.......
+<br><br><br>
+
+<img src="01.jpg" alt="Car1" align="center">
+<img src="02.jpg" alt="Car2" align="right">
+<img src="03.jpg" alt="Car3" align="left"><br>
+
+
+</div>
+
+<!-- Box 5 -->
+
+<div class="box5">
+
+<footer class="authority">
+<p>Copyright &copy; rahul2000maths"gmail.com</p>
+</footer>
+
+</div>
+
+<!-- Box 6 -->
+<br><br><br>
+
+</body>
+
+</html>
