@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Condtionals Statement/Condtionals Statement.iml" filepath="$PROJECT_DIR$/../Condtionals Statement/Condtionals Statement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Practice_Set/Practice_Set.iml" filepath="$PROJECT_DIR$/Practice_Set/Practice_Set.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Strings.iml" filepath="$PROJECT_DIR$/Strings.iml" />
+    </modules>
+  </component>
+</project>

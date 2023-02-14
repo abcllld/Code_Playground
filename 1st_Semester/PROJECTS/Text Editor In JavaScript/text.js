@@ -91,5 +91,25 @@ $('.minimize').click(function() {
   $("#text").toggle();
 });
 
+// close function :
+$(".close").click(function() {
+    $("#container").hide();
 });
 
+
+// color function:
+
+$(document).ready(function() {
+    $("#myColor").click(function() {
+      var colorPicker = $("<input type='color'>");
+      colorPicker.on("change", function() {
+        var selectedColor = colorPicker.val();
+        document.execCommand("foreColor", false, selectedColor);
+      });
+      colorPicker.click();
+    });
+  });
+  
+
+
+});

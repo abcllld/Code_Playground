@@ -1,0 +1,9 @@
+Primary key : It isalways different in  a row. It is also called surogant key or natural nkey. Surogant key has no real world application but natural key has.
+
+A foreign key is a ttribute that we cna store in a database that will link us to another database. A foreign key stores the value of a primary key in another table of the dtabase. Thus a foreingn key is jsut a primary key of another table.A table can have one or more than one foreing key
+
+A composote key is a key that needs two attribute i.e two loumns 
+
+A SQL is a language that is used to interact with RDBMS.
+
+ 

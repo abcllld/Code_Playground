@@ -1,0 +1,45 @@
+//Length:
+ String.prototype.length 
+
+
+ //Search:
+ String.prototype.search('characters')
+
+
+//Replace:
+ String.prototype.replace(searchFor, replaceWith) 
+
+
+//Case Changing:
+console.log(myName.toUpperCase());
+console.log(myName.toLowerCase());
+
+
+//The Concatenation Method:
+
+console.log(firstName + lastName);
+
+********OR**************
+
+console.log(`${firstName} ${lastName}`);
+
+************** OR************
+
+console.log(firstName.concat (lastName));
+console.log(firstName.concat (" ", lastName));
+
+
+// String.trim():
+
+let str = '                  Hello World          '
+console.log(str.trim());
+
+
+//Converting a String to an Array:
+
+var txt = "a, b,c d,e";  ---------->>string
+
+console.log(txt.split(","));      //Split on comma
+console.log( txt.split(" "));     //Split on spaces
+console.log(txt.split("|"));      //Split on pipe
+
