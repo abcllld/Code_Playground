@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #480dde;
+    color: rgb(7, 0, 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /*height from top to down 100px it means*/
+    overflow: hidden;
+    /* padding: 30px; */
+}
+
+h2{
+    /* margin: 10px 20px; */
+    text-align: center;
+}
+
+.container{
+    background-color: rgb(31, 227, 233);
+    box-shadow: 5px 4px 40px 10px rgb(201, 8, 235);
+    /* padding: 10px; */
+    width: 370px;
+    height: 400px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.resultingBox{
+background-color: #450357;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+position: relative;
+font-size: 20px;
+letter-spacing: 2px;
+padding: 25px 10px;
+width: 300px;
+height: 50px;
+/* margin-left: 26px; */
+margin: 20px 40px;
+}
+
+
+.resultingBox #result{
+    word-wrap: break-word;
+    height: 100%;
+    overflow-y: scroll;
+    /* this overflow for ensuring that if the password length is such that it croosees the box it must be scrolled in such situation */
+}
+
+.resultingBox .btn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    max-width: 100%;
+    font-size: 25px;
+}
+
+.btn{
+    border: none;
+    background-color:#959757;
+    /* color: red; */
+    font-size: 15px;
+    cursor: pointer;
+    /* padding: 10px 12px; */
+}
+
+.btn{
+    display: block;
+    width: 100%;
+}
+
+.settingParameter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 5px;
+}
+
+.settingsElement{
+    margin: 20px 40px;
+}
+
+#generate{
+    height: 35px;
+    margin: 30px 40px;
+    width: 300px;
+    background-color: #05d74e;
+}
+
+.settingParameter #length{
+    width: 100px;
+    background-color: #547ceb;
+}
+
+
+
