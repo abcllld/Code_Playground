@@ -5,10 +5,18 @@ public class Set_02 {
         int [] array = {76,54,88,33,21};
         int num = 54;
         boolean isPresent = false; //default is false
-        for(int i=0;i<array.length;i++){
-            if(){
-
+        for(int element:array){
+            if(num == element){
+                isPresent = true;
+                break;
             }
+        }
+
+        if(isPresent){
+            System.out.println("The value is Present is Array");
+        }
+        else{
+            System.out.println("The value is NOT Present is Array");
         }
     }
 }
